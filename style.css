@@ -1,0 +1,166 @@
+
+body{
+	/*border: 2px solid black;*/
+	min-height: 100vh;
+	font-size: 15px;
+	/*font-family: sans-serif; */
+}
+
+div.image-wrapper{
+  position: relative; 
+  box-sizing: border-box; 
+  font-family: sans-serif; 
+  background: url(https://source.unsplash.com/wAoA4WkiDeo/) 0 / cover fixed; 
+  height: 100vh; 
+  overflow: hidden;
+  z-index: 0; 
+  display: flex; 
+  /*border: 2px solid red; */
+}
+
+div.content{
+  color: white; 
+  letter-spacing: 2px; 
+  width: 70%; 
+  max-width: 700px; 
+  border-radius: 5px;
+  /*height: 500px;*/
+  padding: 20px;
+  margin: auto; 
+  /*text-align: center;*/
+  /*border: 2px solid; */
+  display: flex; 
+  /*justify-content: space-between;*/
+  background: -webkit-linear-gradient(57deg, rgb(225, 167, 222), rgb(242, 221, 162));
+  background: linear-gradient(57deg, rgb(225, 167, 222), rgb(242, 221, 162));
+}
+
+
+div.content::before{ 
+  content: ""; 
+  position: absolute; 
+  top: 0; right: 0; bottom: 0; left: 0; 
+  background: rgba(204, 153, 204, .4);
+  border: 0;
+  filter: blur(10px);
+  /*filter: opacity(30%); */
+  margin: -5px;
+  z-index: -1;
+}
+
+div.user{
+	/*border: 2px solid white;*/
+}
+
+hr{
+	height: auto; 
+	border: none;
+	border-left: 1px solid rgba(255,255,255,.4); 
+}
+
+form{
+	display: flex;
+	flex-direction: column; 
+	/*align-items: center;*/
+	/*border: 2px solid;*/
+	/*width: 40%;*/
+	padding: 10px 20px;
+	/*border: 2px solid white;*/
+}
+
+p.sign{
+	font-size: 20px;
+	align-self: flex-start;
+}
+
+
+input{
+	outline: none;
+	margin: 10px 0px;
+	border: 0;
+	border-bottom: 1px solid rgba(255,255,255,.4);
+	background-color: rgba(0,0,0,.001);  
+	padding: 12px 0px; 
+	color: white; 
+	/*border: 2px solid;*/
+}
+
+button{
+	border-radius: 5px;
+	cursor: pointer; 
+	margin: 15px 0px 10px; 
+	height: 40px; 
+	outline: none;
+}
+
+button.sign{
+	background-color: #FBDB80;
+	border: 0;
+	font-weight: bold; 
+	/*align-self: flex-start;*/
+	/*border: 2px solid white; */
+}
+
+p.forgot-password{
+	margin-top: 0px; 
+	margin-bottom: 40px;
+	font-size: 10px; 
+	text-align: left; 
+	/*border: 2px solid white;*/
+}
+
+p.forgot-password a{
+	text-decoration: none; 
+	color: white; 
+	text-align: left; 
+}
+
+div.alternate{
+	font-size: 10px;
+}
+
+
+div.social{
+	display: flex; 
+	justify-content: space-between; 
+	/*border: 2px solid;*/
+}
+
+button.social{
+	background-color: rgba(0,0,0,.001);
+	border: 1px solid white;
+	padding: 10px;
+	color: white;
+	width: min-content;
+}
+
+p.message{
+	font-size: 10px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+    
+    div.image-wrapper{
+    	overflow: scroll;
+    }
+
+    div.content{
+    	flex-direction: column; 
+    }
+
+    div.social{
+    	justify-content: flex-start; 
+    }
+
+    button.social{
+    	margin: 10px;
+    }
+}
+
+
+
+
+
+
+
